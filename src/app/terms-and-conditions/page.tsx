@@ -15,13 +15,13 @@ export default function TermsAndConditions() {
         <div
           className="lg:hidden absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(/circle-bg.png)`,
+            backgroundImage: `url(/assets/terms-and-conditions/circle-bg.png)`,
           }}
         />
         <div
           className="max-lg:hidden absolute inset-0 -z-10 bg-center w-full bg-no-repeat bg-cover"
           style={{
-            backgroundImage: `url(/circle-bg-web.png)`,
+            backgroundImage: `url(/assets/terms-and-conditions/circle-bg-web.png)`,
           }}
         />
         <h1 className="text-[2rem] sm:text-[2.5rem] text-white font-semibold">
