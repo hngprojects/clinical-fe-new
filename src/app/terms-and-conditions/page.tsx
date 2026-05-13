@@ -34,7 +34,7 @@ export default function TermsAndConditions() {
         <div className="flex bg-[#F0F0F0] py-6 px-5 rounded-[12px] w-9/10 flex-col items-center gap-8">
           {terms.map((term, index) => (
             <motion.div
-              key={index}
+              key={term.title}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
