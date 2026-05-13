@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
+import { env } from "@/env/server";
 
 export default function robots(): MetadataRoute.Robots {
   const isProd = process.env.NODE_ENV === "production";
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+  const appUrl = env.NEXT_PUBLIC_APP_URL;
 
   return {
     rules: isProd

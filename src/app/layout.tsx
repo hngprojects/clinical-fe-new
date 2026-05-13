@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { env } from "@/env/server";
 
 const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
 
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
-const appName = process.env.NEXT_PUBLIC_APP_NAME ?? "Next Starter";
+const appUrl = env.NEXT_PUBLIC_APP_URL;
+const appName = env.NEXT_PUBLIC_APP_NAME;
 
 export const metadata: Metadata = {
   metadataBase: new URL(appUrl),
