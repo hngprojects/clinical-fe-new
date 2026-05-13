@@ -66,6 +66,29 @@ function AnimatedList({ items }: { items: string[] }) {
   );
 }
 
+function ContactInfoList({
+  items,
+}: {
+  items: { label: string; value: string }[];
+}) {
+  return (
+    <motion.ul
+      className="space-y-2 text-sm leading-7 text-muted-foreground sm:text-base"
+      variants={listVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-8%" }}
+    >
+      {items.map((item) => (
+        <motion.li key={item.label} variants={listItemVariants}>
+          <span className="font-medium text-foreground">{item.label}:</span>{" "}
+          {item.value}
+        </motion.li>
+      ))}
+    </motion.ul>
+  );
+}
+
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="text-xl font-semibold text-foreground">{children}</h2>
@@ -159,7 +182,7 @@ export default function PrivacyPolicyContent() {
             <SectionText>{CONTACT_US.content}</SectionText>
           ) : null}
           {CONTACT_US.contactInfo.length > 0 ? (
-            <AnimatedList items={CONTACT_US.contactInfo} />
+            <ContactInfoList items={CONTACT_US.contactInfo} />
           ) : null}
         </AnimatedSection>
       </motion.article>

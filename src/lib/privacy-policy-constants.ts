@@ -73,6 +73,10 @@ export const YOUR_RIGHTS = {
 
 export const CONTACT_US = {
   title: "Contact Us",
-  content: "",
-  contactInfo: [],
+  content:
+    "If you have any questions or concerns about this Privacy Policy, you can reach us at:",
+  contactInfo: [
+    { label: "Email", value: "support@clinsight.com" },
+    { label: "Phone", value: "" },
+  ],
 };
