@@ -64,10 +64,10 @@ export function WaitlistForm() {
 
   return (
     <main className="relative flex min-h-screen items-center justify-center px-4 py-8 md:px-6 lg:px-8">
-      <div className="flex w-full max-w-[630px] flex-col gap-8 md:gap-10">
+      <div className="flex w-full max-w-157.5 flex-col gap-8 md:gap-10">
         {/* Logo */}
         <div className="flex justify-center">
-          <div className="flex h-[60px] w-[60px] items-center justify-center rounded-2xl border-b-[5px] border-r-[5px] border-[#DCE8F6] bg-blue-600 p-2.5">
+          <div className="flex h-15 w-15 items-center justify-center rounded-2xl border-b-[5px] border-r-[5px] border-[#DCE8F6] bg-blue-600 p-2.5">
             <MyIcon />
           </div>
         </div>
@@ -127,7 +127,7 @@ export function WaitlistForm() {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="mx-auto flex w-full max-w-[525px] flex-col gap-4 rounded-[20px] border border-[#F0F0F0] bg-[#FAFAFA] p-2.5"
+          className="mx-auto flex w-full max-w-131.25 flex-col gap-4 rounded-[20px] border border-[#F0F0F0] bg-[#FAFAFA] p-2.5"
         >
           {/* First Name Input */}
           <div className="relative">
